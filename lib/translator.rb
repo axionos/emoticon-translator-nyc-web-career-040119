@@ -1,8 +1,8 @@
 require "pry"
 require "yaml"
-list = YAML.load('lib/emoticons.yml')
 
 def load_library(emoticons)
+  list = YAML.load('lib/emoticons.yml')
   result = {"get_meaning" => {}, "get_emoticon" => {}}
 
 
