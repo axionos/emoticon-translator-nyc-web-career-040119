@@ -20,7 +20,12 @@ end
 
 def get_japanese_emoticon(path, emoticons)
   directory = load_library(path)
+  result = nil
+  if directory["get_emoticon"][emoticon]
 
+  else
+
+  end
 end
 
 def get_english_meaning
