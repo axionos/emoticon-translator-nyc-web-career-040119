@@ -20,11 +20,10 @@ end
 
 def get_japanese_emoticon(path, emoticons)
   emoticons = load_library(path)
-  emoticons.each do |action, hash|
-    hash.each do |eng, jap|
-
-    end
-      binding.pry
+  if condition
+    
+  else
+    
   end
 end
 
