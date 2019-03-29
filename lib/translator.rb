@@ -6,8 +6,8 @@ def load_library(emoticons)
   emoticons
   result = {}
   result["mean"] = {}
-  result["emoticon"] = {}
-  emoticons.each do ||
+  result["emoticons"] = {}
+  emoticons.each do |meaning, emoticon|
 
   end
 end
