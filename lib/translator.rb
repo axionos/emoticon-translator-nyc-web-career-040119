@@ -1,11 +1,12 @@
 require "pry"
 require "yaml"
 
-angel:
-  - "O:)"
-  - "☜(⌒▽⌒)☞"
 
-angel: ["O:)", "☜(⌒▽⌒)☞"]
+{
+  angel: ["O:)", "☜(⌒▽⌒)☞"],
+  angry: [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],
+  bored: [":O", "(ΘεΘ;)"]
+}
 def load_library(emoticons)
   list = YAML.load_file(emoticons)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
