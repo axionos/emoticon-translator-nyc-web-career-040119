@@ -21,10 +21,12 @@ end
 def get_japanese_emoticon(path, emoticons)
   directory = load_library(path)
   result = nil
-  if directory["get_emoticon"][emoticon]
+  directory["get_emoticon"].each do |eng, jap|
+    if emoticons == eng
+      result = jap
+    else
 
-  else
-
+    end
   end
 end
 
