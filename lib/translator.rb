@@ -19,8 +19,13 @@ def load_library(emoticons)
 end
 
 def get_japanese_emoticon(path, emoticons)
-  load_library(path)
-  
+  emoticons = load_library(path)
+  emoticons.each do |action, hash|
+    hash.each do |eng, jap|
+      
+    end
+      binding.pry
+  end
 end
 
 def get_english_meaning
