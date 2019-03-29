@@ -1,7 +1,7 @@
 require "yaml"
 
 def load_library
-  # code goes here
+  YAML.load_file('translator.rb')
 end
 
 def get_japanese_emoticon
