@@ -11,8 +11,8 @@ def load_library(emoticons)
   list = YAML.load_file(emoticons)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   list.each do |meaning, array|
-    result["get_meaning"][array[1]] = meaning
-    result["get_emoticon"][array[0]] = array[1]
+    result["get_meaning"][array[1]] = meaning #jap - meaning
+    result["get_emoticon"][array[0]] = array[1] #eng - jap
   end
   binding.pry
   result
