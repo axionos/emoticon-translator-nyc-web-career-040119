@@ -37,5 +37,14 @@ end
 def get_english_meaning(path, emoticons)
   directory = load_library(path)
   result = nil
-  
+  directory["get_meaning"].each do |emoticon, meaning|
+    if emoticons == emoticon
+      result = meaning
+    end
+    if response == nil
+      return "Sorry, that emoticon was not found"
+    else
+      return response
+    end
+  end
 end
