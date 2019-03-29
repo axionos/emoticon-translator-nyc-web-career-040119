@@ -36,4 +36,6 @@ end
 
 def get_english_meaning(path, emoticons)
   directory = load_library(path)
+  result = nil
+  
 end
