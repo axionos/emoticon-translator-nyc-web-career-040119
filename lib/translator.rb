@@ -6,7 +6,8 @@ def load_library(emoticons)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   list.each do |meaning, array|
     result["get_meaning"][array[1]] = meaning
-  end
+    result["get_meaning"][array[0]] = array[1]
+end
 
 
   result
