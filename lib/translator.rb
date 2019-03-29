@@ -24,7 +24,7 @@ def get_japanese_emoticon(path, emoticons)
   directory["get_emoticon"].each do |eng, jap|
     if emoticons == eng
       result = jap
-    else
+    elsif result == nil
       return "Sorry, that emoticon was not found"
     end
   end
