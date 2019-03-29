@@ -14,11 +14,13 @@ def load_library(emoticons)
     result["get_meaning"][array[1]] = meaning
     result["get_emoticon"][array[0]] = array[1]
   end
+  binding.pry
   result
 end
 
 def get_japanese_emoticon(path, emoticons)
   load_library(path)
+
 end
 
 def get_english_meaning
