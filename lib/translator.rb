@@ -24,10 +24,9 @@ def get_japanese_emoticon(path, emoticons)
   directory["get_emoticon"].each do |eng, jap|
     if emoticons == eng
       result = jap
-    else
-
     end
   end
+  
 end
 
 def get_english_meaning
